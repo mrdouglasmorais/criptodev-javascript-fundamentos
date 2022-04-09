@@ -44,7 +44,6 @@ let test = () => console.log('Arrow function')
 test();
 
 // Assincronidade
-
 const getApiData = async () => {
   let request = await axios.get('https://gama-next-server.herokuapp.com/courses')
 
