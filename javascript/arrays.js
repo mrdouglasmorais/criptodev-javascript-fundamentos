@@ -31,6 +31,12 @@ let filtrandoEstudantes = students.filter( item => item.gender !== 'Female')
 console.log('filter', filtrandoEstudantes)
 // o FILTER serve para trazer resultados e elementos especificos para
 
-let buscandoAlunos = students.find( item => item.age === 'João Paulo')
+let buscandoAlunos = students.find( item => item.name === 'João Paulo')
 console.log('find', buscandoAlunos)
 //  busca elemntos com parametros
+
+let calculandoIdades = students.reduce( (previusValue, currentValue) => {
+  return previusValue + currentValue.age
+}, 0)
+console.log('Reduce', calculandoIdades)
+// Calcula acumula calores em nosso array
