@@ -58,3 +58,14 @@ getApiData().then( res => {
 .finally( () => console.log('Encerrado'))
 
 
+function exampleRest(...value){
+  let val = value
+  let result = val.map( el => console.log('funções com rest', el))
+  return result
+}
+
+exampleRest();
+exampleRest(5);
+exampleRest(5, 6, 7);
+
+
